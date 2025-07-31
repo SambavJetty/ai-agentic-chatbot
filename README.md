@@ -1,41 +1,6 @@
-# Learning Langchain with Next.js & MongoDB: HR Chatbot
-
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-This project documents my learning journey exploring Langchain, MongoDB Atlas Vector Search, and Next.js by building a simple HR assistant chatbot. The goal was to understand Retrieval-Augmented Generation (RAG), agent creation, state management with LangGraph, and integrating various AI models and databases within a modern web framework.
-
-## ✨ Features
-
-*   **Chat Interface:** A simple UI built with Next.js and Tailwind CSS to interact with the HR agent.
-*   **HR Agent:** A Langchain agent capable of answering questions based on employee data.
-*   **Employee Data Lookup:** Uses MongoDB Atlas Vector Search to find relevant employee information based on natural language queries.
-*   **Database Seeding:** A script (`seed-database.ts`) to generate synthetic employee data and populate the vector database using an LLM.
-*   **Model Flexibility:** Designed to potentially swap between different LLMs (OpenAI, HuggingFace, Mistral, Ollama) and embedding models.
-*   **State Management:** Uses LangGraph with MongoDB persistence to manage conversation history.
-
-## 📚 Tech Stack
-
-*   **Framework:** [Next.js](https://nextjs.org/) (App Router)
-*   **Language:** [TypeScript](https://www.typescriptlang.org/)
-*   **AI/LLM Orchestration:** [Langchain](https://js.langchain.com/) & [LangGraph](https://js.langchain.com/docs/langgraph)
-*   **Database:** [MongoDB Atlas](https://www.mongodb.com/atlas) (with Vector Search)
-*   **Styling:** [Tailwind CSS](https://tailwindcss.com/)
-*   **LLM (Primary):** [OpenAI](https://openai.com/) (Configurable for others like Mistral, HuggingFace, Ollama)
-*   **Embeddings (Primary):** [OpenAI](https://openai.com/) (Configurable for others like HuggingFace)
-*   **Package Manager:** [pnpm](https://pnpm.io/)
-
 ## 🚀 Getting Started
 
 Follow these steps to set up and run the project locally.
-
-### Prerequisites
-
-*   [Node.js](https://nodejs.org/) (LTS version recommended)
-*   [pnpm](https://pnpm.io/installation)
-*   A [MongoDB Atlas](https://www.mongodb.com/cloud/atlas/register) account with a running cluster.
-*   API Keys:
-    *   OpenAI API Key
-    *   (Optional: Mistral API Key, HuggingFace API Key if configuring different models)
 
 ### Installation
 
@@ -106,7 +71,3 @@ Follow these steps to set up and run the project locally.
 *   **Environment Management:** Handling API keys and configuration securely.
 *   **Database Seeding:** Programmatically generating and populating database records.
 *   **Model Integration:** Swapping between different LLM providers and embedding models within Langchain.
-
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
